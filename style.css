@@ -1,6 +1,26 @@
+.name {
+	width: 30%;
+}
+
+.links {
+	width: 70%;
+}
+.links p {
+	text-align: right;
+}
+.name, .links {
+	float: left;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+
 body {
 	background-image: url(img/kamayan.jpg);
-	color: yellow;
+	color: red;
+	font-family: Tahoma;
+	margin: 0px auto;
+	width: 70%;
+	background-color: black;
 }
 
 h1 {
@@ -16,7 +36,8 @@ p {
 }
 
 a:link, a:visited {
-	color: yellow;
+	color: red;
+	text-decoration: none;
 }
 
 nav {

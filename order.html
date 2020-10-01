@@ -5,6 +5,9 @@
 	<title>Kapistahan | Ordering</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<style>
+		.button {
+			width: 125px;
+		}
 	</style>
 </head>
 
@@ -23,7 +26,9 @@
 	<center>
 	<h2>Online Food Order</h2>
 	<p>
-		<table>
+		<form method="POST" action="submitted.html" name="ofrm">
+			<p>Please tell us who you are (<font color="#FF0000">red</font> denotes required information):</p>
+		<table border="0" cellpadding="0" width="550" id="table1">
 		<tr>
 			<td width="250" height="31"><b>Item Description</b></td>
 			<td align="center" width="100" height="31"><b>Quantity</b></td>
@@ -33,7 +38,7 @@
 		<tr>
 			<td width="250">Adobo</td>
 			<td align="center" width="100">
-			<input type="text" name="qtyA" size="5" tabindex="5"></td>
+			<input type="text" name="qtyA" size="5" tabindex="5" required></td>
 			<td align="right" width="60">$13</td>
 			<td align="right" width="140">
 			<input type="text" name="totalA" size="12" tabindex="99"></td>
@@ -41,7 +46,7 @@
 		<tr>
 			<td width="250">Bicol Express</td>
 			<td align="center" width="100">
-			<input type="text" name="qtyB" size="5" tabindex="5"></td>
+			<input type="text" name="qtyB" size="5" tabindex="5" required></td>
 			<td align="right" width="60">$10</td>
 			<td align="right" width="140">
 			<input type="text" name="totalB" size="12" tabindex="99"></td>
@@ -49,7 +54,7 @@
 		<tr>
 			<td width="250">Buko Salad</td>
 			<td align="center" width="100">
-			<input type="text" name="qtyC" size="5" tabindex="5"></td>
+			<input type="text" name="qtyC" size="5" tabindex="5" required></td>
 			<td align="right" width="60">$8</td>
 			<td align="right" width="140">
 			<input type="text" name="totalC" size="12" tabindex="99"></td>
@@ -57,7 +62,7 @@
 		<tr>
 			<td width="250">Calamansi Juice</td>
 			<td align="center" width="100">
-			<input type="text" name="qtyC" size="5" tabindex="5"></td>
+			<input type="text" name="qtyC" size="5" tabindex="5" required></td>
 			<td align="right" width="60">$2</td>
 			<td align="right" width="140">
 			<input type="text" name="totalC" size="12" tabindex="99"></td>
@@ -65,7 +70,7 @@
 		<tr>
 			<td width="250">Halo Halo</td>
 			<td align="center" width="100">
-			<input type="text" name="qtyC" size="5" tabindex="5"></td>
+			<input type="text" name="qtyC" size="5" tabindex="5" required></td>
 			<td align="right" width="60">$8</td>
 			<td align="right" width="140">
 			<input type="text" name="totalC" size="12" tabindex="99"></td>
@@ -73,7 +78,7 @@
 		<tr>
 			<td width="250">Leche Flan</td>
 			<td align="center" width="100">
-			<input type="text" name="qtyC" size="5" tabindex="5"></td>
+			<input type="text" name="qtyC" size="5" tabindex="5" required></td>
 			<td align="right" width="60">$10</td>
 			<td align="right" width="140">
 			<input type="text" name="totalC" size="12" tabindex="99"></td>
@@ -81,7 +86,7 @@
 		<tr>
 			<td width="250">Mango Nectar</td>
 			<td align="center" width="100">
-			<input type="text" name="qtyC" size="5" tabindex="5"></td>
+			<input type="text" name="qtyC" size="5" tabindex="5" required></td>
 			<td align="right" width="60">$2</td>
 			<td align="right" width="140">
 			<input type="text" name="totalC" size="12" tabindex="99"></td>
@@ -89,7 +94,7 @@
 		<tr>
 			<td width="250">Pandesal</td>
 			<td align="center" width="100">
-			<input type="text" name="qtyC" size="5" tabindex="5"></td>
+			<input type="text" name="qtyC" size="5" tabindex="5" required></td>
 			<td align="right" width="60">$5</td>
 			<td align="right" width="140">
 			<input type="text" name="totalC" size="12" tabindex="99"></td>
@@ -97,7 +102,7 @@
 		<tr>
 			<td width="250">Samalamig</td>
 			<td align="center" width="100">
-			<input type="text" name="qtyC" size="5" tabindex="5"></td>
+			<input type="text" name="qtyC" size="5" tabindex="5" required></td>
 			<td align="right" width="60">$5</td>
 			<td align="right" width="140">
 			<input type="text" name="totalC" size="12" tabindex="99"></td>
@@ -105,7 +110,7 @@
 		<tr>
 			<td width="250">Sinigang</td>
 			<td align="center" width="100">
-			<input type="text" name="qtyC" size="5" tabindex="5"></td>
+			<input type="text" name="qtyC" size="5" tabindex="5" required></td>
 			<td align="right" width="60">$11</td>
 			<td align="right" width="140">
 			<input type="text" name="totalC" size="12" tabindex="99"></td>
@@ -113,7 +118,7 @@
 		<tr>
 			<td width="250">Turon</td>
 			<td align="center" width="100">
-			<input type="text" name="qtyC" size="5" tabindex="5"></td>
+			<input type="text" name="qtyC" size="5" tabindex="5" required></td>
 			<td align="right" width="60">$5</td>
 			<td align="right" width="140">
 			<input type="text" name="totalC" size="12" tabindex="99"></td>
@@ -124,16 +129,20 @@
 			<td align="center" width="100">&nbsp;</td>
 			<td align="right" width="60">&nbsp;</td>
 			<td align="right" width="140">
-			<input type="text" name="GrandTotal" size="15" tabindex="99"></td>
+			<input type="text" name="GrandTotal" size="15" tabindex="99" required></td>
 		</tr>
-
 		<tr>
-			<td width="250">&nbsp;</td>
+			<td width="250">
+			<input type="submit" value="Submit" name="subButton" tabindex="50" size="100px" style="width:150px; background-color: red" formaction="./delivery.html">
+			</td>
 			<td align="center" width="100">&nbsp;</td>
 			<td align="right" width="60">&nbsp;</td>
-			<td align="right" width="140">&nbsp;</td>
+			<td align="right" width="140">
+			<input type="reset" value="Reset" name="resetButton" tabindex="50" style="width:150px; background-color: green"></td>
 		</tr>
 		</table>
+		</form>
+
 	</p>
 	</center>
 </body>

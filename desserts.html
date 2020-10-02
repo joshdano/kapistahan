@@ -15,7 +15,11 @@
 		</div>
 
 		<div class="links">
-			<p><a href="entrees.html">entrees</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="desserts.html"><span style="color: #ffffff">desserts</span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="drinks.html">drinks</a></p>
+			<p>
+				<a href="entrees.html" onclick="popup()">entrees</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;<a href="desserts.html" onclick="popup()"><span style="color: #ffffff">desserts</span></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;<a href="carte.html" onclick="popup()">a la carte</a>
+			</p>
 		</div>
 	</div>
 
@@ -61,4 +65,10 @@
 
 	</table>
 	</center>
+
+	<script>
+		function popup() {
+			alert("ALERT: A button on this page has been clicked! You are now being redirected to a new page.");
+		}
+	</script>
 </body>

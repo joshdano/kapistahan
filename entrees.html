@@ -15,7 +15,10 @@
 		</div>
 
 		<div class="links">
-			<p><a href="entrees.html"><span style="color: #ffffff">entrees</span></a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="desserts.html">desserts</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href="drinks.html">drinks</a></p>
+			<p>
+				<a href="entrees.html" onclick="popup()"><span style="color: #ffffff">entrees</span></a>
+				&nbsp;&nbsp;&nbsp;&nbsp;<a href="desserts.html" onclick="popup()">desserts</a>
+				&nbsp;&nbsp;&nbsp;&nbsp;<a href="carte.html" onclick="popup()">a la carte</a></p>
 		</div>
 	</div>
 
@@ -51,15 +54,14 @@
 		</td>
 	</tr>
 	<tr>
-		<td><img src='img/pandesal.jpg' width='300px'></td>
-		<td>
-		<center>
-			<h2>Pandesal ($5)</h2>
-			<p>Pandesal is a common bread roll made of flour, eggs, yeast, sugar, and salt.</p>
-		</center>
-		</td>
 	</tr>
 
 	</table>
 	</center>
+
+	<script>
+		function popup() {
+			alert("ALERT: A button on this page has been clicked! You are now being redirected to a new page.");
+		}
+	</script>
 </body>
